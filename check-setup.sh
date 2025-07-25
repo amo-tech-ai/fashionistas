@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "🚀 EventsOS Core Structure Setup Complete!"
+echo ""
+echo "Directory Structure:"
+echo "==================="
+tree -L 2 -I 'node_modules|.git' /home/sk/fx/eventos
+echo ""
+echo "React Version in Admin:"
+echo "======================="
+cd /home/sk/fx/eventos/apps/admin
+../../pnpm list react react-dom | grep -E "react|react-dom"
+echo ""
+echo "MUI Version:"
+echo "============"
+../../pnpm list @mui/material | grep "@mui/material"
+echo ""
+echo "To start development:"
+echo "===================="
+echo "cd /home/sk/fx/eventos/apps/admin"
+echo "../../pnpm dev"
+echo ""
+echo "Or from root:"
+echo "cd /home/sk/fx/eventos"
+echo "./pnpm --filter @eventos/admin dev"
