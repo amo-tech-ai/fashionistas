@@ -63,3 +63,8 @@ logs/
 # Temporary files
 tmp/
 temp/
+
+# Package managers
+pnpm
+pnpm.exe
+.pnpm-store/
